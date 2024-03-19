@@ -1,18 +1,14 @@
 /* Article styling */
 
 article {
+    background-color: #FFFFFF;
     margin: 3.5%;
     border: 1.5px solid black;
 }
 
-article {
-    margin: 3.5%;
-    border: 1.5px solid black;
-}
 
 article:nth-child(1) {
-    /* border: 1.5px solid rgb(228, 8, 8); */
-
+    border: solid #E84340 3px;
 }
 
 .article-img {
@@ -130,6 +126,14 @@ article:nth-child(1) {
         margin: 1%;
         /* Reapply margin for larger screens */
         /* height: 100%; */
+    }
+
+    article:nth-child(1) {
+        width: 58%;
+    }
+
+    article:nth-child(2) {
+        width: 28%;
     }
 
     .article-img {
