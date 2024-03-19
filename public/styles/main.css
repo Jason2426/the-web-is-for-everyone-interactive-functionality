@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-bg-color: ##F7F7F5;
+    --text-color: #000000;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 10%;
+}
+
+/* Nav styling */
+
+nav {
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 40%;
+}
+
+@media (min-width: 31.25em) {
+    main {
+        margin-top: 7%;
+    }
+}
+
+@media (min-width: 45em) {
+    .logo {
+        width: 20%;
+    }
+}
+
+@media (min-width: 60em) {
+    main {
+        margin-top: 6%;
+    }
+}
+
+@media (min-width: 75em) {
+
+    .logo {
+        width: calc(20% - 5%)
+    }
+
+}
