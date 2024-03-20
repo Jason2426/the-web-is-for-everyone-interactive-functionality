@@ -1,17 +1,15 @@
 
 To do list : 
 
-- Fix mobile styling for detailpage : html, layout, font sizes and font family ✅
+- Shorten title text if they include more letters as x amount add ... to home page titles
 
-- Try to make site responsive with CSS clamp() in combination with media queries, detailpage ✅, voorpagina nog niet
+- Add form with post method to button make function for button that copies the current URL its on to the clipboard and then changes with post method.
 
-- add form with post method to button 
-
-- Add button that copies the current URL its on to the clipboard and then changes
-  current text to Link copied with a check icon. HTML layer first 
-
-  - Fix mobile styling for homepage : html, layout, font sizes and font family
+- If the button in the form works add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
+ 
+- Fix mobile styling for homepage : html, layout, font sizes and font family
 
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
+
 
 
