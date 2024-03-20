@@ -1,11 +1,17 @@
 
 To do list : 
 
-- Fix mobile styling : html, layout, font sizes and font family ✅
+- Fix mobile styling for detailpage : html, layout, font sizes and font family ✅
 
-- Try to make site responsive with CSS clamp() in combination with media queries /
+- Try to make site responsive with CSS clamp() in combination with media queries, detailpage ✅, voorpagina nog niet
 
-- Add button that copies the current URL its on to the clipboard and then changes /
+- add form with post method to button 
+
+- Add button that copies the current URL its on to the clipboard and then changes
   current text to Link copied with a check icon. HTML layer first 
 
+  - Fix mobile styling for homepage : html, layout, font sizes and font family
+
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
+
+

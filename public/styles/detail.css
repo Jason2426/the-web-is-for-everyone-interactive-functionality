@@ -15,12 +15,8 @@ main {
 
 h2 {
     text-align: center;
-    /* font-size: 2em; */
-    /* margin: 5%; */
     font-size: clamp(2em, 4rem, 3vw);
-
     padding-inline: calc(2% + .5em);
-    word-break: normal;
 }
 
 /* #region Post styling */
@@ -33,6 +29,7 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    margin: 2%;
 }
 
 li {
@@ -57,6 +54,7 @@ li {
 
 .article_image {
     width: 100%;
+    height: auto;
     object-fit: cover;
     border: solid 1px black;
 }
@@ -136,101 +134,43 @@ img {
 
 /* #region New Media Queries */
 
-
-/* #endregion */
-
-
-/* #region OLD Media Queries */
-
-/* @media (min-width: 28em) {
-
-    .post-img {
-        height: calc(13em + 4em);
-    }
-}
-
-
-@media (min-width: 34em) {
-
-    h2 {
-        margin-bottom: 0%;
-    }
-
-    .post-img {
-        height: calc(13em + 6em);
-    }
-
-    li {
-        margin: 0% 2% 0% 2%;
-    }
-}
-
-@media (min-width: 36em) {
+/* Screen width 800px */
+@media (min-width: 50em) {
 
     main {
         margin: calc(5% + 5%);
-        margin-top: calc(10% - 15%);
+        margin-top: 0%;
     }
 
 }
 
-@media (min-width: 43em) {
-
-    main {
-        margin: calc(5% + 10%);
-        margin-top: calc(10% - 15%);
-    }
-
-}
-
-@media (min-width: 48em) {
-
-    main {
-        margin: calc(5% + 12%);
-        margin-top: calc(10% - 15%);
-    }
-
-
-}
-
-@media (min-width: 53em) {
+/* screen width 896px */
+@media (min-width: 56em) {
 
     main {
         margin: calc(5% + 15%);
-        margin-top: calc(10% - 15%);
+        margin-top: 0%;
     }
 
-
-}
-
-@media (min-width: 58em) {
-
-    main {
-        margin: calc(5% + 17.5%);
-        margin-top: calc(10% - 16%);
+    h2 {
+        padding-inline: calc(2% + 2em);
     }
-
-
 }
 
-@media (min-width: 68em) {
-
+/* screen width 1040px */
+@media (min-width: 65em) {
     main {
         margin: calc(5% + 20%);
-        margin-top: calc(10% - 13%);
+        margin-top: 0%;
     }
 
+    h2 {
+        padding-inline: calc(2% + 1em);
+        word-break: keep-all;
+    }
 
 }
 
-@media (min-width: 75em) {
 
-    main {
-        margin: calc(5% + 22.5%);
-        margin-top: calc(10% - 15%);
-    }
-
-
-} */
 
 /* #endregion */
