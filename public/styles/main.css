@@ -27,8 +27,9 @@
      
       /* Fonts */ 
 
-      --medium-text: 'Aktiv-Rg', sans serif;
-      --regular-text: 'Aktiv-Md', sans serif;
+      --medium-text: 'Tiempos-Headline-Medium', sans serif;
+      --regular-text: 'Tiempos-Headline-Regular', sans serif;
+      --content-text: 'Inter', sans serif; 
 
 }
 

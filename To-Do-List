@@ -1,14 +1,11 @@
-To Do List, tip van Krijn 
 
+To do list : 
 
-To do : 
+- Fix mobile styling : html, layout, font sizes and font family ✅
 
-- Mobile styling fixen (grote van teksten, fontfamily, indeling)
+- Try to make site responsive with CSS clamp() in combination with media queries /
 
-- Link kopieren button toevoegen en stylen (svg) / leestijd in dezelfde section/rij of list 
+- Add button that copies the current URL its on to the clipboard and then changes /
+  current text to Link copied with a check icon. HTML layer first 
 
-- Site responsive maken met CSS clamp() ? 
-
-- Link kopieer button werkend maken
-
-- Progressive scroll bar, scroll driven animation
+- Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /

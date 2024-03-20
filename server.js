@@ -95,7 +95,6 @@ app.get('/post/:slug', function (request, response) {
         });
 });
 
-
 // POST route for the index page
 app.post('/', function (request, response) {
     // Currently not handling POST data, redirect to the homepage
@@ -104,9 +103,9 @@ app.post('/', function (request, response) {
 
 
 // Set the port number for express to listen on
-app.set('port', process.env.PORT || 8888);
+app.set('port', process.env.PORT || 2024);
 
-// Start express and listen on the specified port : 8888
+// Start express and listen on the specified port : 2024
 app.listen(app.get('port'), function () {
     // Log a message to the console with the port number
     console.log(`yoo stuff is running on : http://localhost:${app.get('port')}`);
