@@ -1,15 +1,21 @@
 
 To do list : 
 
-- Shorten title text if they include more letters as x amount add ... to home page titles
+- Add form including POST method with a button in it that copies the current URL its on to the clipboard.
 
-- Add form with post method to button make function for button that copies the current URL its on to the clipboard and then changes with post method.
-
-- If the button in the form works add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
+- If the button in the form works completely and is tested add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
  
-- Fix mobile styling for homepage : html, layout, font sizes and font family
+- Fix mobile and desktop styling for homepage : html, layout and font sizes
 
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
 
+
+Done : 
+
+- Restructure HTML cause it got confusing 
+
+- Detailpage styling for layout, texts and responsiveness with the use of clamps and calc() for optimized responsiveness.
+
+- Shorten title text if they include more letters as x amount add ... to home page titles 
 
 
