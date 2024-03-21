@@ -1,4 +1,4 @@
-# RedPers redesign/code 📰
+# RedPers redesign 📰
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
 Voorpagina en detailpagina
 
