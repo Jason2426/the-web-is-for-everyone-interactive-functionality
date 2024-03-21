@@ -1,9 +1,6 @@
 
 To do list : 
 
-- Add form including POST method with a button in it that copies the current URL its on to the clipboard.
-Note : If button is clicked the link is copied and it shows different text, still have to restructure the javascript, fix the html and also the styling. /
-
 - If the button in the form works completely and is tested add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
  
 - Fix mobile and desktop styling for homepage : html, layout and font sizes
@@ -11,15 +8,8 @@ Note : If button is clicked the link is copied and it shows different text, stil
 
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
 
+Note where I left off so i dont get confused : 
 
-Done : 
 
-- Restructure HTML cause it got confusing 
-
-- Detailpage styling for layout, texts and responsiveness with the use of clamps and calc() for optimized responsiveness.
-
-- Shorten title text if they include more letters as x amount add ... to home page titles 
- 
-- Make hamburger menu for mobile 
 
 

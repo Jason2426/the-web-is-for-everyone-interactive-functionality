@@ -140,6 +140,11 @@ li:hover {
 }
 
 @media (min-width: 60em) {
+
+    nav {
+
+    }
+    
     main {
         margin-top: 6%;
         display: flex;

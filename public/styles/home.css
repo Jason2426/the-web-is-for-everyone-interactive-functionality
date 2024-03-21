@@ -9,7 +9,7 @@ article {
 /* First article styling */
 
 article:nth-child(1) {
-    border: solid #E84340 2.5px;
+    border: solid var(--tertiary-accent-color) 2.5px;
 }
 
 
