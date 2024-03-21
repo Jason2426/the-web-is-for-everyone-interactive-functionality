@@ -97,16 +97,14 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.removeChild(tempInput);
 
         // Hide the button
-        copyButton.style.display = 'none';
+        // copyButton.style.visibility = "hidden";
+        // copyButton.style.display = "none";
+        copyButton.hidden = true;
+        
 
         // Show the copy success message
-        copySuccess.style.display = 'block';
+        copySuccess.hidden = false;
 
-        // Hide the success message after 3 seconds
-        setTimeout(function() {
-            copySuccess.style.display = 'none';
-            copyButton.style.display = 'block'; // Show the button again
-        }, 3000);
     });
 });
 

@@ -77,6 +77,9 @@ li {
     background: none;
     font-size: 1em;
 }
+/* #copySuccess {
+    display: hidden;
+} */
 
 .est_read_time {
     color: gray;
