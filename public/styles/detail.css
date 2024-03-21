@@ -59,7 +59,7 @@ li {
     border: solid 1px black;
 }
 
-/* Elements under the article image */ 
+/* Elements under the article image */
 
 .rest_information {
     margin: 2% 0% 2% 0%;
@@ -74,7 +74,7 @@ li {
     /* Distribute space between items */
 }
 
-/* Zero state */ 
+/* Zero state */
 .copy_button {
     border: none;
     background: none;
@@ -88,6 +88,11 @@ li {
 
 .check_icon path {
     fill: rgb(0, 128, 58);
+}
+
+#copySuccess {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
 }
 
 .est_read_time {

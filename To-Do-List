@@ -8,7 +8,6 @@ Note : If button is clicked the link is copied and it shows different text, stil
  
 - Fix mobile and desktop styling for homepage : html, layout and font sizes
 
-- Make hamburger menu for mobile 
 
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
 
@@ -20,5 +19,7 @@ Done :
 - Detailpage styling for layout, texts and responsiveness with the use of clamps and calc() for optimized responsiveness.
 
 - Shorten title text if they include more letters as x amount add ... to home page titles 
+ 
+- Make hamburger menu for mobile 
 
 

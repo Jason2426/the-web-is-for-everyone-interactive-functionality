@@ -1,6 +1,4 @@
 
-
-
 document.addEventListener("DOMContentLoaded", function() {
     var copyButton = document.querySelector('.copy_button');
     var linkIcon = document.getElementById('link_icon');
@@ -9,30 +7,23 @@ document.addEventListener("DOMContentLoaded", function() {
 
     copyButton.addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default form submission behavior
-
         // Get the form action link
         var formAction = postForm.getAttribute('action');
         var fullLink = window.location.origin + formAction; // Construct full link
-
         try {
             // Create a temporary input element
             var tempInput = document.createElement('input');
             tempInput.setAttribute('value', fullLink);
             document.body.appendChild(tempInput);
-
             // Select the input field
             tempInput.select();
             tempInput.setSelectionRange(0, 99999); // For mobile devices
-
             // Copy the text inside the input field
             document.execCommand('copy');
-
             // Remove the temporary input
             document.body.removeChild(tempInput);
-
             // Hide the button
             copyButton.hidden = true;
-
             // Show the copy success message
             copySuccess.hidden = false;
         } catch (err) {
