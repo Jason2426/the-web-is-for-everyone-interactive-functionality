@@ -77,9 +77,10 @@ li {
     background: none;
     font-size: 1em;
 }
-/* #copySuccess {
-    display: hidden;
-} */
+
+.check_icon path {
+    fill: green;
+}
 
 .est_read_time {
     color: gray;
