@@ -59,6 +59,8 @@ li {
     border: solid 1px black;
 }
 
+/* Elements under the article image */ 
+
 .rest_information {
     margin: 2% 0% 2% 0%;
     display: flex;
@@ -72,14 +74,20 @@ li {
     /* Distribute space between items */
 }
 
+/* Zero state */ 
 .copy_button {
     border: none;
     background: none;
     font-size: 1em;
 }
 
+/* Hover state*/
+.copy_button:hover {
+    color: var(--accent-color);
+}
+
 .check_icon path {
-    fill: green;
+    fill: rgb(0, 128, 58);
 }
 
 .est_read_time {

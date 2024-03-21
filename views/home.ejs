@@ -22,8 +22,9 @@
                                 <p class="author">
                                     <%= post.yoast_head_json.author %>
                                 </p>
-                                <p class="read-time">
-                                    <%= post.yoast_head_json.twitter_misc["Geschatte leestijd"] %>
+                                <p class="day_data">
+                                    <%= new Date(post.date_gmt).getDate() %>/<%= new Date(post.date_gmt).getMonth()
+                                    %>
                                 </p>
                             </section>
                         </a>

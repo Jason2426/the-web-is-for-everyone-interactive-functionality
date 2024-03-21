@@ -10,26 +10,26 @@
     src: url(/public/assets/font/TiemposText-Regular.ttf);
 }
 
-/* #endregion */ 
+/* #endregion */
 
 :root {
-      /* Huisstijl kleuren */
+    /* Huisstijl kleuren */
 
-      --main-bg-color: #F7F7F5;
-      --secondary-bg-color: #FFFFFF; 
-      --text-color: #000000; 
-      --accent-color: #E84340; 
+    --main-bg-color: #F7F7F5;
+    --secondary-bg-color: #FFFFFF;
+    --text-color: #000000;
+    --accent-color: #E84340;
 
-      /* New Accent colors */ 
+    /* New Accent colors */
 
-      --secondary-accent-color : #F2D930; 
-      --tertiary-accent-color : #5340E8; 
-     
-      /* Fonts */ 
+    --secondary-accent-color: #F2D930;
+    --tertiary-accent-color: #5340E8;
 
-      --medium-text: 'Tiempos-Headline-Medium', sans serif;
-      --regular-text: 'Tiempos-Headline-Regular', sans serif;
-      --content-text: 'Inter', sans serif; 
+    /* Fonts */
+
+    --medium-text: 'Tiempos-Headline-Medium', sans serif;
+    --regular-text: 'Tiempos-Headline-Regular', sans serif;
+    --content-text: 'Inter', sans serif;
 
 }
 
@@ -54,17 +54,78 @@ main {
     margin-top: 10%;
 }
 
+ul {
+    list-style: none;
+}
+
 /* Nav styling */
 
 nav {
     margin: 5%;
     display: flex;
     justify-content: space-between;
+    padding-bottom: calc(5%);
+    border-bottom: 1px solid black;
 }
+
 
 .logo {
     width: 40%;
 }
+
+.burger_menu_window {
+    position: fixed;
+    transform: translateX(-150%);
+    transition: transform 0.38s;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    /* background: rgb(15, 15, 15);
+    color: white; */
+    background: rgb(238, 238, 238);
+    border: solid 2.5px var(--tertiary-accent-color);
+    font-family: 'Inter', sans-serif;
+    overflow-y: auto;
+
+    font-size: 1.25em;
+    font-weight: 800;
+}
+
+.different_pages {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li {
+    margin: 3%;
+}
+
+.close_icon {
+    margin: 3%;
+}
+
+.svg path {
+    fill: white;
+}
+
+.other_pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #5340E8;
+}
+
+li:hover {
+    color: var(--accent-color);
+
+}
+
+
+
 
 @media (min-width: 31.25em) {
     main {
@@ -81,6 +142,16 @@ nav {
 @media (min-width: 60em) {
     main {
         margin-top: 6%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .search_icon {
+        display: none;
+    }
+
+    .menu_icon {
+        display: none;
     }
 }
 

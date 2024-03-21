@@ -7,7 +7,7 @@ import fetchJson from './helpers/fetch-json.js';
 // Set the basis endpoint
 const apiUrl = 'https://redpers.nl/wp-json/wp/v2';
 
-const redpers_url = 'https://redpers.nl/wp-json/wp/v2/posts'
+const redpers_post_url = 'https://redpers.nl/wp-json/wp/v2/posts'
 const directus_url = 'https://fdnd-agency.directus.app/items/redpers_shares'
 
 
@@ -98,7 +98,6 @@ app.get('/post/:slug', function (request, response) {
             response.status(500).send('Error fetching data!');
         });
 });
-
 
 // POST route for the index page
 app.post('/', function (request, response) {

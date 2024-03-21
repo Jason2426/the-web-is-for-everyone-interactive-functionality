@@ -6,14 +6,15 @@ article {
     border: 1.5px solid black;
 }
 
+/* First article styling */
 
 article:nth-child(1) {
-    border: solid #E84340 3px;
+    border: solid #E84340 2.5px;
 }
+
 
 .article-img {
     width: 100%;
-    height: 14em;
     object-fit: cover;
     /* Maintain aspect ratio and crop if necessary */
 }
@@ -32,10 +33,16 @@ article:nth-child(1) {
     margin: 5% 4% 5% 4%;
     display: flex;
     justify-content: space-between;
+    padding-top: 5%;
+    border-top: 1px solid rgb(156, 156, 156);
 }
 
 .author {
     font-weight: 800;
+}
+
+.day_data {
+    color: rgb(151, 151, 151);
 }
 
 /* #region Responsiveness styling */

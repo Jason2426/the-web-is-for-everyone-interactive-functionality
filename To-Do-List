@@ -2,11 +2,13 @@
 To do list : 
 
 - Add form including POST method with a button in it that copies the current URL its on to the clipboard.
-Note : If button is clicked the link is copied and it shows different text, still have to restructure the javascript, fix the html and also the styling.
+Note : If button is clicked the link is copied and it shows different text, still have to restructure the javascript, fix the html and also the styling. /
 
 - If the button in the form works completely and is tested add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
  
 - Fix mobile and desktop styling for homepage : html, layout and font sizes
+
+- Make hamburger menu for mobile 
 
 - Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
 
