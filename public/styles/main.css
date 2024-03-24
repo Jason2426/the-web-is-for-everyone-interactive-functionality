@@ -74,7 +74,7 @@ nav {
 
 .burger_menu_window {
     position: fixed;
-    /* transform: translateX(-150%); */
+    transform: translateX(-150%);
     transition: transform 0.38s;
     top: 0;
     right: 0;
@@ -102,7 +102,7 @@ nav {
 }
 
 .other_pages {
-    margin-bottom: calc(5%);
+    margin-bottom: calc(10%);
     align-items: center;
 }
 

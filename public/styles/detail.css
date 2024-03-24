@@ -25,11 +25,12 @@ h2 {
     width: 100%;
 }
 
-ul {
+.main_post_info {
     list-style: none;
     display: flex;
     justify-content: center;
     margin: 2%;
+    text-wrap: nowrap;
 }
 
 li {
