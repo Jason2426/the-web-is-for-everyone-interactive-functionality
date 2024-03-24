@@ -1,14 +1,9 @@
 
 To do list : 
 
-- If the button in the form works completely and is tested add a hover state and a succes state ( current text change to Link copied with a check icon before or after the text.)
- 
-- Fix mobile and desktop styling for homepage : html, layout and font sizes
+- Fix hamburger menu closing button 
 
-
-- Add Progressive scroll bar, scroll driven animation that sticks to the top for detailpage /
-
-Note where I left off so i dont get confused : 
+- Restructure / Improve javascript code for copying the link 
 
 
 

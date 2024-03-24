@@ -2,9 +2,6 @@ Copied Code
 
 
 
-
-
-
  /* link delen en hoeveel keer gedeeld */ 
 
 app.get('/', (request, response) => {
