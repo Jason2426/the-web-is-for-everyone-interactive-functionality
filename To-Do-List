@@ -1,9 +1,10 @@
 
 To do list : 
 
-- Add / style different states to link button : Zero state, hover state and succes state. 
+- Navigatiebar voor desktop maken
 
-- ? 
+-  De toegankelijkheid van de website optimaliseren voor blinde mensen, keyboardonlyusers en tests uitvoeren
+
 
 
 
@@ -12,5 +13,7 @@ Done ✅
 - Fix hamburger menu closing button 
 
 - Restructure / Improve javascript code for copying the link 
+
+- Add / style different states to link button : Zero state, hover state and succes state. 
 
 

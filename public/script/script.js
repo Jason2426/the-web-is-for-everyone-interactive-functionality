@@ -19,13 +19,15 @@ document.querySelector('.copy_button').addEventListener('click', function(event)
         .catch(function(err) {
             // Handle errors
             console.error('Error copying link to clipboard: ', err);
-            alert('Link kopieren mislukt..');
+            alert('Link kopieren mislukt...');
         });
 });
 
 
 
+
 /* Hamburger menu code*/
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var menuIcon = document.querySelector('.menu_icon');

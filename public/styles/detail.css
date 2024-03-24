@@ -36,20 +36,23 @@ h2 {
 li {
     margin: 2%;
     /* text-wrap: nowrap; */
-    white-space: nowrap;
+
 
     &.author_data {
         color: var(--accent-color);
         font-weight: 700;
+        white-space: nowrap;
     }
 
     &.category_data {
         font-weight: 700;
+        white-space: nowrap;
     }
 
     &.date_data {
         color: gray;
         font-weight: lighter;
+        white-space: nowrap;
     }
 
     &.b_point {}
@@ -96,8 +99,6 @@ li {
 #copySuccess {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    color: var(--tertiary-accent-color);
-
 }
 
 .est_read_time {
@@ -105,7 +106,6 @@ li {
 }
 
 img {
-    width: 100%;
     object-fit: cover;
     height: 50%;
 }
@@ -189,6 +189,10 @@ img {
     h2 {
         padding-inline: calc(2% + 1em);
         word-break: keep-all;
+    }
+
+    li {
+        font-size: calc(1.3em)
     }
 }
 

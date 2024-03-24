@@ -47,7 +47,7 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 main {
@@ -105,6 +105,8 @@ nav {
 }
 
 .other_pages {
+    display: flex;
+    flex-direction: column;
     margin-bottom: calc(10%);
     align-items: center;
 }
@@ -125,19 +127,11 @@ li {
     fill: white;
 }
 
-.other_pages {
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    color: #5340E8;
-}
 
 li:hover {
     color: var(--accent-color);
 
 }
-
-
 
 
 @media (min-width: 31.25em) {
@@ -157,6 +151,7 @@ li:hover {
     nav {
         padding-bottom: 0%;
         border-bottom: none;
+        justify-content: center;
     }
 
     main {

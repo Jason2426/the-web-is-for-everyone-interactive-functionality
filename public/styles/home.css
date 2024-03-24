@@ -1,3 +1,4 @@
+@import url('main.css');
 /* Article styling */
 
 article {
@@ -141,13 +142,6 @@ article:nth-child(1) {
         /* height: 100%; */
     }
 
-    article:nth-child(1) {
-        width: 58%;
-    }
-
-    article:nth-child(2) {
-        width: 28%;
-    }
 
     .article-img {
         height: calc(10em + 6em)
