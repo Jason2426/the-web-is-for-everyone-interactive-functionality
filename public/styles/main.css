@@ -94,7 +94,7 @@ nav {
     border: none;
 }
 
-.different_pages {
+.main_pages {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ nav {
 }
 
 li {
-    margin: 3%;
+    margin: 5%;
 }
 
 .menu_icon {
