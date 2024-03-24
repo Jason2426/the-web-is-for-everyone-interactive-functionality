@@ -96,6 +96,8 @@ li {
 #copySuccess {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    color: var(--tertiary-accent-color);
+
 }
 
 .est_read_time {

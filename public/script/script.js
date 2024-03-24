@@ -10,16 +10,19 @@ document.querySelector('.copy_button').addEventListener('click', function(event)
     navigator.clipboard.writeText(fullLink)
         .then(function() {
             // Show success message
-            document.getElementById('copySuccess').hidden = false;
+            copySuccess.hidden = false;
+            copySuccess.style.display = 'flex';
+            copySuccess.style.alignItems = 'center';
             // Hide copy button
             event.target.hidden = true;
         })
         .catch(function(err) {
             // Handle errors
             console.error('Error copying link to clipboard: ', err);
-            alert('Failed to copy link to clipboard');
+            alert('Link kopieren mislukt..');
         });
 });
+
 
 
 /* Hamburger menu code*/
