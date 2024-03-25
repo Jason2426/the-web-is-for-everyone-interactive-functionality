@@ -58,3 +58,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+/* Current day and month code */
+
+// const currentDateElement = document.querySelector('.current-date');
+// const currentDate = new Date();
+// const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+// currentDateElement.textContent = currentDate.toLocaleDateString('nl-US', options);
+
+const currentDateElement = document.querySelector('.current-date');
+const currentDate = new Date();
+const options = { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' };
+
+let dateString = currentDate.toLocaleDateString('nl-US', options);
+dateString = dateString.replace(' ', ', ') // Replace the space after the month with a comma and space
+
+currentDateElement.textContent = dateString;
+
+
+
+
+

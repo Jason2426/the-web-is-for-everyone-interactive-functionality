@@ -53,6 +53,7 @@ article:nth-child(1) {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: calc(10% - 7%);
     }
 
     article {
