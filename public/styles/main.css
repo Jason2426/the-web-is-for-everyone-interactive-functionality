@@ -76,7 +76,7 @@ nav {
 .burger_menu_window {
     position: fixed;
     transform: translateX(-150%);
-    transition: transform 0.38s;
+    transition: transform 0.38s cubic-bezier(0.17, 0.67, 0, 1);
     top: 0;
     right: 0;
     left: 0;

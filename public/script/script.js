@@ -26,8 +26,6 @@ if (copyButton) {
 }
 
 
-
-
 /* Hamburger menu code*/
 
 
