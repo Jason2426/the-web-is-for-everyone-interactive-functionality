@@ -238,7 +238,14 @@ li:hover {
     }
 }
 
-@media (min-width: 60em) {
+@media (max-width: 60em) {
+    
+    .desktop-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 60.0625em) {
 
     nav {
         margin: 0%;
@@ -253,10 +260,6 @@ li:hover {
         justify-content: center;
     }
 
-    .mobile-menu {
-        display: none;
-    }
-
     .desktop-menu {
         display: block;
 
@@ -269,9 +272,15 @@ li:hover {
         }
     }
 
+    .mobile-menu {
+        display: none;
+
+    }
+
 }
 
 @media(min-width: 67em) {
+
 
     .desktop-pages {
 

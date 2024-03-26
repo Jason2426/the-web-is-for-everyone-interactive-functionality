@@ -13,7 +13,7 @@
             <main>
                 <% posts.forEach(post=> { %>
                     <article class="">
-                        <a href="/post/<%= post.slug %>">
+                        <a href="/post/<%= post.slug %>" aria-label="<%- post.title.rendered %>">
                             <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
                             <h2 class="article-title">
                                 <%- post.title.rendered %>
@@ -31,4 +31,4 @@
                     <% }); %>
             </main>
 
-            <%- include('./partials/foot') %>
+    <%- include('./partials/foot') %>

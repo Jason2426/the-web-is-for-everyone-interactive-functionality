@@ -17,7 +17,7 @@
                             <li class="author_data">
                                 <%= post[0].yoast_head_json.author %>
                             </li>
-                            <li class="b_point">
+                            <li class="b_point" aria-hidden="true">
                                 •
                             </li>
                             <li class="category_data">
@@ -38,7 +38,7 @@
                     <section class="rest_information">
                         <div class="link_button_section">
                             <form id="postForm" action="/post/<%= post[0].slug %>" method="POST">
-                                <button class="copy_button" aria-label="Copy link">Link Kopieren</button>
+                                <button type="button" class="copy_button" aria-label="Copy link">Link Kopieren</button>
                                 <div id="copySuccess" hidden>
                                     <svg class="check_icon" width="25px" height="25px" viewBox="0 0 24 24" fill="green"
                                         xmlns="http://www.w3.org/2000/svg">
