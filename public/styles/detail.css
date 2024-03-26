@@ -188,6 +188,13 @@ h2 {
         word-break: keep-all;
     }
 
+    .main_post_info {
+
+        & li {
+            font-size: 1.25em;
+        }
+    }
+
 }
 
 

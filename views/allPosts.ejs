@@ -7,12 +7,12 @@
                 <a href="/allPosts/<% post.id %>">
                     <p>
                         id : <%= post.id %>,
-                        category : <%= post.categories %>
-                        author : <%= post.yoast_head_json.author %>
-                        media : <%= post.featured_media %>
-                        Geschatte leestijd : <%= post["Geschatte leestijd"] %>
+                            category : <%= post.categories %>
+                                author : <%= post.yoast_head_json.author %>
+                                    media : <%= post.featured_media %>
+                                        Geschatte leestijd : <%= post["Geschatte leestijd"] %>
                     </p>
-                    <img src="<%= post.jetpack_featured_media_url %>" class="article-img">
+                    <img src="<%= post.jetpack_featured_media_url %>" style="width: 20%" tabindex="1" class="article-img">
                 </a>
             </li>
             <% }); %>
