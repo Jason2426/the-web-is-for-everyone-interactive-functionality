@@ -8,8 +8,6 @@
 
         <%- include('./partials/navbar') %>
 
-        <script src="/script/script.js" defer></script>
-
             <!-- Trending and latest articles -->
 
             <main>
@@ -25,8 +23,7 @@
                                     <%= post.yoast_head_json.author %>
                                 </p>
                                 <p class="day_data">
-                                    <%= new Date(post.date_gmt).getDate() %>/<%= new Date(post.date_gmt).getMonth()
-                                    %>
+                                    <%= new Date(post.date_gmt).getDate() %>/<%= new Date(post.date_gmt).getMonth() %>
                                 </p>
                             </section>
                         </a>
@@ -34,4 +31,4 @@
                     <% }); %>
             </main>
 
-        <%- include('./partials/foot') %>
+            <%- include('./partials/foot') %>

@@ -145,9 +145,7 @@ li:hover {
 .desktop-menu {
     font-family: 'Inter', sans-serif;
 
-}
-
-/*  First row styling */
+    /*  First row styling */
 
 .first-row {
     display: flex;
@@ -201,6 +199,7 @@ li:hover {
     }
 }
 
+
 /* Second Row styling */
 
 .second-row {
@@ -220,6 +219,9 @@ li:hover {
         color: var(--accent-color);
     }
 }
+
+}
+
 
 /* #endregion */
 
@@ -268,7 +270,6 @@ li:hover {
     }
 
 }
-
 
 
 /* #region Keyframe animations */

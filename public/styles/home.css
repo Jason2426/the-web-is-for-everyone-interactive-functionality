@@ -1,18 +1,19 @@
 @import url('main.css');
+
+
 /* Article styling */
 
 article {
     background-color: #FFFFFF;
     margin: 3.5%;
     border: 1.5px solid black;
+
 }
 
 /* First article styling */
-
-article:nth-child(1) {
+&:nth-child(1) {
     border: solid var(--tertiary-accent-color) 2px;
 }
-
 
 .article-img {
     width: 100%;
@@ -27,7 +28,6 @@ article:nth-child(1) {
     -webkit-line-clamp: 3;
     line-clamp: 3;
     overflow: hidden;
-
 }
 
 .article-info {
@@ -36,17 +36,17 @@ article:nth-child(1) {
     justify-content: space-between;
     padding-top: 5%;
     border-top: 1px solid rgb(156, 156, 156);
+
+    .author {
+        font-weight: 800;
+    }
+
+    .day_data {
+        color: rgb(151, 151, 151);
+    }
 }
 
-.author {
-    font-weight: 800;
-}
-
-.day_data {
-    color: rgb(151, 151, 151);
-}
-
-/* #region Responsiveness styling */
+/* Responsiveness styling */
 @media (min-width: 31.25em) {
 
     main {
