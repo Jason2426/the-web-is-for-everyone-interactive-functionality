@@ -169,7 +169,7 @@ h2 {
 
     main {
         margin: calc(5% + 15%);
-        margin-top: 0%;
+        margin-top: 5%;
     }
 
     h2 {
@@ -181,7 +181,7 @@ h2 {
 @media (min-width: 65em) {
     main {
         margin: calc(5% + 20%);
-        margin-top: 0%;
+        margin-top: 3%;
     }
 
     h2 {

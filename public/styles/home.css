@@ -11,9 +11,6 @@ article {
 }
 
 /* First article styling */
-&:nth-child(1) {
-    border: solid var(--tertiary-accent-color) 2px;
-}
 
 .article-img {
     width: 100%;

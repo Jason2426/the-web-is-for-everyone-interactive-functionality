@@ -147,78 +147,78 @@ li:hover {
 
     /*  First row styling */
 
-.first-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5% 10% 5% 10%;
+    .first-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5% 10% 5% 10%;
 
-}
+    }
 
-.current-date {
-    text-transform: uppercase;
-    font-weight: 700;
-    flex: 1;
-}
-
-.logo_desktop {
-    width: 35%;
-    display: block;
-    margin: 0 auto;
-}
-
-.logo {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-}
-
-.newsletter {
-    flex: 1;
-
-    & span {
+    .current-date {
         text-transform: uppercase;
         font-weight: 700;
-    }
-}
-
-.newsletter_button {
-    border: none;
-    background: inherit;
-
-    svg {
-        transition: transform 0.3s ease-in-out;
-        /* Add smooth transition on transform */
+        flex: 1;
     }
 
-    /* Apply animation on hover */
-    &:hover svg {
-        animation: swing 0.5s ease-in-out;
-        /* Apply swing animation on hover */
+    .logo_desktop {
+        width: 35%;
+        display: block;
+        margin: 0 auto;
     }
-}
 
-
-/* Second Row styling */
-
-.second-row {
-    font-size: 0.8em;
-    margin: 0% 6% 0% 6%;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-    white-space: nowrap;
-}
-
-.desktop-pages {
-    margin: 2%;
-    display: flex;
-    justify-content: space-between;
-
-    & a:hover {
-        color: var(--accent-color);
+    .logo {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
     }
-}
+
+    .newsletter {
+        flex: 1;
+
+        & span {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+    }
+
+    .newsletter_button {
+        border: none;
+        background: inherit;
+
+        svg {
+            transition: transform 0.3s ease-in-out;
+            /* Add smooth transition on transform */
+        }
+
+        /* Apply animation on hover */
+        &:hover svg {
+            animation: swing 0.5s ease-in-out;
+            /* Apply swing animation on hover */
+        }
+    }
+
+
+    /* Second Row styling */
+
+    .second-row {
+        font-size: 0.8em;
+        margin: 0% 6% 0% 6%;
+        border-top: solid 1px black;
+        border-bottom: solid 1px black;
+        white-space: nowrap;
+    }
+
+    .desktop-pages {
+        margin: 2%;
+        display: flex;
+        justify-content: space-between;
+
+        & a:hover {
+            color: var(--accent-color);
+        }
+    }
 
 }
 
@@ -269,6 +269,18 @@ li:hover {
         }
     }
 
+}
+
+@media(min-width: 67em) {
+
+    .desktop-pages {
+
+        flex-wrap: nowrap;
+
+        li {
+            padding: 1%;
+        }
+    }
 }
 
 
