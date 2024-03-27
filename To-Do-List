@@ -1,15 +1,17 @@
 
-To do list : 
-
-- Navigatiebar toegankelijk maken, vragen aan chatGPT hoe ik dit kan verbeteren.
-
-- Homepage redesign voor desktop. 
+Goals : 
 
 - De toegankelijkheid van de website optimaliseren voor blinde mensen, keyboardonlyusers en tests uitvoeren. 
 
-- Website testen met browserstack en dit documenteren. (2.1.3).
+To do list : 
 
-- Categorie ophalen en toevoegen bij post. 
+- 3 UI componenten namaken schetsen en progressive enhancement gebruiken.
+
+- Navigatiebar toegankelijk maken, vragen aan chatGPT hoe ik dit kan verbeteren. Fixen dat mobiele menu uit staat als in html als desktop breedte 
+
+- Website testen met browserstack en dit documenteren. (2.1.3)
+
+- Categorie ophalen en toevoegen aan een post. 
 
 
 
