@@ -32,7 +32,12 @@ De website is gemaakt aan de hand van de bestaande huisstijl van Redpers met zel
 
 **Wat is progressive enhancement**
 
-Progressive Enhancement is een manier voor het bouwen en ontwerpen van een website of functies op een website. Deze methode zorgt ervoor dat je je website of functie toegankelijk maakt voor eerst oudere browsers of in browsers die bepaald elementen niet ondersteunen. Vervolgens kun je geavanceerdere functies toevoegen die worden verbeterd in browsers die ze ondersteunen. Dit zorgt ervoor dat je de website toegankelijk maakt voor een groter publiek. 
+Progressive Enhancement is een manier voor het bouwen en ontwerpen van een website of functie op een website. Deze methode houd in dat je je website of functie eerst toegankelijk maakt voor oudere browsers of voor browsers die bepaalde elementen niet ondersteunen. Vervolgens kun je geavanceerdere functies toevoegen voor de andere / betere browsers. Dit zorgt ervoor dat je de website toegankelijk maakt voor een groter aantal gebruikers. 
+
+**Hoe ik PE heb toegepast**
+Mobile first is een goed voorbeeld van PE, ik heb de website eerst ontworpen en gemaakt voor mobiel en daarna de rest van devices waaronder tablet en desktop. Hiermee laat ik zien dat ik rekening houd met alle gebruikers die verschillende devices hebben. Daarnaast resulteert het werken van mobile first ook in efficientere code en snellere laadtijden wat uiteindelijk goed is voor gebruikers op alle devices.
+
+Link kopieeer knop, eerst de HTML en javascript geschreven en later pas enhancements (styling) toegevoegd. 
 
 ***
 
