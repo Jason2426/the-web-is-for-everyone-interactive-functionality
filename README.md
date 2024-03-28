@@ -30,6 +30,10 @@ De website is gemaakt aan de hand van de bestaande huisstijl van Redpers met zel
 * Mobile first 📱
 * Toegankelijk voor mobiele en desktop gebruikers ✔️
 
+**Wat is progressive enhancement**
+
+Progressive Enhancement is een manier voor het bouwen en ontwerpen van een website of functies op een website. Deze methode zorgt ervoor dat je je website of functie toegankelijk maakt voor eerst oudere browsers of in browsers die bepaald elementen niet ondersteunen. Vervolgens kun je geavanceerdere functies toevoegen die worden verbeterd in browsers die ze ondersteunen. Dit zorgt ervoor dat je de website toegankelijk maakt voor een groter publiek. 
+
 ***
 
 ## Bronnen 📚
