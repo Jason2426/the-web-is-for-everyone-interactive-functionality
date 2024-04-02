@@ -1,0 +1,59 @@
+Old Detailpage HTML
+
+
+<section class="post">
+    <h2> <%- post[0].title.rendered %> </h2>
+    <section class="article_information">
+        <ul class="main_post_info">
+            <li class="author_data">
+                <%= post[0].yoast_head_json.author %>
+            </li>
+            <li class="b_point" aria-hidden="true">
+                •
+            </li>
+            <li class="category_data">
+                Category
+            </li>
+            <li class="b_point">
+                •
+            </li>
+            <li class="date_data">
+                <%= new Date(post[0].date_gmt).getDate() %> / <%= new Date(post[0].date_gmt).getMonth() %> / <%= new
+                            Date(post[0].date_gmt).getFullYear() %>
+            </li>
+        </ul>
+    </section>
+
+    <img src="<%= post[0].jetpack_featured_media_url %>" class="article_image" alt="">
+
+    <section class="rest_information">
+        <div class="link_button_section">
+            <form id="postForm" action="/post/<%= post[0].slug %>" method="POST">
+                <button type="button" class="copy_button" aria-label="Copy link">Link Kopieren</button>
+                <div id="copySuccess" hidden>
+                    <svg class="check_icon" width="25px" height="25px" viewBox="0 0 24 24" fill="green"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.5"
+                            d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                            fill="#1C274C" />
+                        <path
+                            d="M16.0303 8.96967C16.3232 9.26256 16.3232 9.73744 16.0303 10.0303L11.0303 15.0303C10.7374 15.3232 10.2626 15.3232 9.96967 15.0303L7.96967 13.0303C7.67678 12.7374 7.67678 12.2626 7.96967 11.9697C8.26256 11.6768 8.73744 11.6768 9.03033 11.9697L10.5 13.4393L12.7348 11.2045L14.9697 8.96967C15.2626 8.67678 15.7374 8.67678 16.0303 8.96967Z"
+                            fill="#1C274C" />
+                    </svg>
+                    <span>Link gekopieerd!</span>
+                </div>
+            </form>
+        </div>
+        <p class="est_read_time">Leestijd : <%= post[0].yoast_head_json.twitter_misc["Geschatte leestijd"] %>
+        </p>
+    </section>
+
+    <section class="article_content">
+        <strong class="content_excerpt">
+            <%- post[0].excerpt.rendered %>
+        </strong>
+        <p class="actual_content">
+            <%- post[0].content.rendered %>
+        </p>
+    </section>
+</section>
