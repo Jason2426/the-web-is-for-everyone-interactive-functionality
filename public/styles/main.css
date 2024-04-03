@@ -269,7 +269,7 @@ li:hover {
         }
 
         & .logo_desktop {
-            width: calc(35% - 10%);
+            width: calc(35% - 12.5%);
         }
     }
 
@@ -297,7 +297,7 @@ li:hover {
         }
 
         & .logo_desktop {
-            width: calc(35% - 10%);
+            width: calc(35% - 15%);
         }
     }
 }
