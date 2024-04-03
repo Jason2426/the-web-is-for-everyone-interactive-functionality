@@ -15,55 +15,75 @@ main {
 /* #region Post styling */
 
 .post {
-    display: flex;
-    flex-direction: column;
+    display: block;
+}
+
+@supports(display: flex) and (flex-direction: column) {
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 h2 {
-    text-align: center;
-    font-size: clamp(2em, 4rem, 3vw);
-    /* For responsiveness */
-    padding-inline: calc(2% + .3em);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@supports (font-size: clamp(0px, 0px, 0px)) and (padding-inline: calc(1% + .1em)) {
+    h2 {
+        text-align: center;
+        font-size: clamp(2em, 4rem, 3vw);
+        /* For responsiveness */
+        padding-inline: calc(2% + .3em);
+    }
 }
 
 /* #region Metadata */
 
 .metadata {
-    display: flex;
-    justify-content: center;
-    margin-top: calc(10%);
-    padding: 5% 0% 5% 0%;
-    border-top: solid 1px #D5D5D5;
-    border-bottom: solid 1px #D5D5D5;
+    display: block;
+}
 
-    .author-img {
-        padding-right: calc(1em);
-        max-width: 20%;
-        max-height: 20%;
-        cursor: pointer;
-    }
+@supports (display: flex) and (justify-content: center) and (margin: calc(0%)) {
 
-    .metatext {
+    .metadata {
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        cursor: pointer;
-    }
+        justify-content: center;
+        margin-top: calc(10%);
+        padding: 5% 0% 5% 0%;
+        border-top: solid 1px #D5D5D5;
+        border-bottom: solid 1px #D5D5D5;
 
-    p {
-        font-family: 'Inter', sans-serif;
-        padding: calc(.5em);
-    }
+        .author-img {
+            padding-right: calc(1em);
+            max-width: 20%;
+            max-height: 20%;
+            cursor: pointer;
+        }
 
-    .author {
-        font-weight: 700;
-        white-space: nowrap;
-        /* So the element does not wrap in any situation */
-    }
+        .metatext {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            cursor: pointer;
+        }
 
-    .category {
-        font-weight: 700;
-        color: var(--accent-color);
+        p {
+            font-family: 'Inter', sans-serif;
+            padding: calc(.5em);
+        }
+
+        .author {
+            font-weight: 700;
+            white-space: nowrap;
+            /* So the element does not wrap in any situation */
+        }
+
+        .category {
+            font-weight: 700;
+            color: var(--accent-color);
+        }
     }
 }
 
@@ -71,13 +91,17 @@ h2 {
 
 /* #region Main Image */
 
-.main-img {
-    margin-top: calc(10%);
-    width: 100%;
+@supports (object-fit: cover) and (margin-top: calc(1%)) {
 
-    .main-article-img {
+    .main-img {
+        margin-top: calc(10%);
         width: 100%;
-        object-fit: cover;
+
+        .main-article-img {
+            width: 100%;
+            object-fit: cover;
+            border: solid 1px black;
+        }
     }
 }
 
@@ -85,45 +109,49 @@ h2 {
 
 /* #region Action Bar styling */
 
-.action-bar {
-    margin-top: calc(5%);
+@supports (margin: calc(1%)) and (display: inline-flex) and (border-radius: 2em) {
 
-    button {
-        display: inline-flex;
-        align-items: center;
-        border-radius: 2em;
-        background-color: inherit;
-        color: #AAAAAA;
-        font-size: 1em;
-        cursor: pointer;
-        border: solid 1px #AAAAAA;
+    .action-bar {
+        margin-top: calc(5%);
+
+        button {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 2em;
+            background-color: inherit;
+            color: #AAAAAA;
+            font-size: 1em;
+            cursor: pointer;
+            border: solid 1px #AAAAAA;
+        }
+
+        .share-btn {
+            padding: calc(.4em) calc(.6em);
+            margin-right: calc(2%);
+        }
+
+        .listen-btn {
+            padding: .4em .7em;
+            margin-right: calc(2%);
+        }
+
+        .like-btn {
+            padding: .4em .4em;
+        }
+
+
     }
 
-    .share-btn {
-        padding: calc(.4em) calc(.6em);
-        margin-right: calc(2%);
+    .action-bar svg {
+        margin-right: .3em;
     }
-
-    .listen-btn {
-        padding: .4em .7em;
-        margin-right: calc(2%);
-    }
-
-    .like-btn {
-        padding: .4em .4em;
-    }
-
-
-}
-
-.action-bar svg {
-    margin-right: .3em;
 }
 
 /* #endregion */
 
 /* #region EST-READ-TIME */
 
+@supports (margin: calc(1%)) and (border-top: solid 1px) and (border-bottom: solid 1px) {
 .est-read-time {
     margin-top: calc(5%);
 
@@ -136,13 +164,15 @@ h2 {
         padding: 1em 0 1em 0;
     }
 }
+}
 
 /* #endregion */
 
 /* #region Article Content */
 
-.article-content {
+@supports (margin: calc(1%)) and (object-fit: cover) {
 
+.article-content {
     margin-top: calc(5%);
 
     .content-excerpt {
@@ -159,7 +189,11 @@ img {
     /* images in articles */
     object-fit: cover;
 }
+}
 
 /* #endregion */
 
 /* #endregion */
+
+/* #region Media Queries */ 
+
