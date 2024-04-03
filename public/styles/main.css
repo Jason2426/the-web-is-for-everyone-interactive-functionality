@@ -12,6 +12,8 @@
 
 /* #endregion */
 
+
+
 :root {
     /* Huisstijl kleuren */
 
@@ -40,19 +42,44 @@
     box-sizing: border-box;
 }
 
+/* Fallback style */
 body {
-    background-color: var(--main-bg-color);
-    color: var(--text-color);
+    background-color: #F7F7F5;
 }
 
+@supports (--main-bg-color : #F7F7F5) and (--text-color: #000000) {
+
+    body {
+        background-color: var(--main-bg-color);
+        color: var(--text-color);
+    }
+}
+
+/* Fallback style */
 a {
-    text-decoration: none;
-    color: var(--text-color);
+    color: #000000;
 }
 
+@supports (--text-color: #000000) {
+
+    a {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+}
+
+/* Fallback style */
 main {
     margin-top: 10%;
 }
+
+@supports (margin: calc(10%)) {
+
+    main {
+        margin-top: calc(10%);
+    }
+}
+
 
 ul {
     list-style: none;
@@ -60,12 +87,17 @@ ul {
 
 /* #region Mobile menu styling */
 
-.mobile-menu {
-    margin: 5%;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: calc(5%);
-    border-bottom: solid 1px black;
+
+@supports (display: flex) and (padding-bottom: calc(5%)) {
+
+    .mobile-menu {
+        margin: calc(5%);
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: calc(5%);
+        border-bottom: solid 1px black;
+    }
+
 }
 
 
@@ -73,49 +105,52 @@ ul {
     width: 40%;
 }
 
-.burger_menu_window {
-    position: fixed;
-    transform: translateX(-150%);
-    transition: transform 0.38s cubic-bezier(0.17, 0.67, 0, 1);
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 99;
-    background: rgb(238, 238, 238);
-    border: solid 2.5px var(--tertiary-accent-color);
-    font-family: 'Inter', sans-serif;
-    overflow-y: auto;
-    font-size: 1.25em;
-    font-weight: 800;
-}
-
-.close_icon {
-    margin: 5%;
-    border: none;
-    width: 24px;
-    height: 24px;
-}
-
-.main_pages {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    & li {
-        margin: 4%;
+@supports (display: flex) and (position: fixed) and (transform: translateX(-150%)) {
+    .burger_menu_window {
+        position: fixed;
+        transform: translateX(-150%);
+        transition: transform 0.38s cubic-bezier(0.17, 0.67, 0, 1);
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 99;
+        background: rgb(238, 238, 238);
+        border: solid 2.5px var(--tertiary-accent-color);
+        font-family: 'Inter', sans-serif;
+        overflow-y: auto;
+        font-size: 1.25em;
+        font-weight: 800;
     }
-}
 
-.other_pages {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: calc(10%);
-    align-items: center;
-
-    & li {
+    .close_icon {
         margin: 5%;
+        border: none;
+        width: 24px;
+        height: 24px;
+    }
+
+
+    .main_pages {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & li {
+            margin: 4%;
+        }
+    }
+
+    .other_pages {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: calc(10%);
+        align-items: center;
+
+        & li {
+            margin: calc(5%);
+        }
     }
 }
 
@@ -124,8 +159,8 @@ ul {
     background: none;
     color: inherit;
     border: none;
-    width: 35px;
-    height: 35px;
+    width: calc(35px);
+    height: calc(35px);
 }
 
 .svg path {
@@ -133,9 +168,17 @@ ul {
 }
 
 
-li:hover {
-    color: var(--accent-color);
+/* Fallback style */
 
+li:hover {
+    color: #E84340;
+}
+
+@supports(--accent-color :#E84340){
+    li:hover {
+        color: var(--accent-color);
+    
+    }
 }
 
 /* #endregion */
@@ -163,7 +206,7 @@ li:hover {
     }
 
     .logo_desktop {
-        width: 35%;
+        width: calc(35%);
         display: block;
         margin: 0 auto;
     }
@@ -171,7 +214,7 @@ li:hover {
     .logo {
         text-align: center;
         display: block;
-        margin: 0 auto;
+        margin: calc(0%) auto;
     }
 
     .newsletter {
@@ -207,7 +250,7 @@ li:hover {
     /* Second Row styling */
 
     .second-row {
-        font-size: 0.8em;
+        font-size: calc(0.8em);
         margin: 0% 6% 0% 6%;
         border-top: solid 1px black;
         border-bottom: solid 1px black;
@@ -215,7 +258,7 @@ li:hover {
     }
 
     .desktop-pages {
-        margin: 1%;
+        margin: calc(1%);
         display: flex;
         justify-content: space-between;
 

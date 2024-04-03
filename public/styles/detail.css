@@ -70,7 +70,7 @@ h2 {
         }
 
         p {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--content-text);
             padding: calc(.5em);
         }
 
@@ -156,7 +156,7 @@ h2 {
         margin-top: calc(5%);
 
         .read-time {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--content-text);
             font-size: 1em;
             color: #AAAAAA;
             border-top: solid 1px #AAAAAA;
@@ -176,7 +176,7 @@ h2 {
         margin-top: calc(5%);
 
         .content-excerpt {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--content-text)
         }
 
         .actual-content {
