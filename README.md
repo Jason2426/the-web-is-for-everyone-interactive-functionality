@@ -36,7 +36,7 @@ Progressive Enhancement is een manier voor het bouwen en ontwerpen van een websi
 
 **Hoe ik PE heb toegepast**
 
-Mobile first is een goed voorbeeld van PE, ik heb de website eerst ontworpen en gemaakt voor mobiel en daarna de rest van devices waaronder tablet en desktop. Hiermee laat ik zien dat ik rekening houd met alle gebruikers die verschillende devices hebben. Daarnaast resulteert het werken van mobile first ook in efficientere code en snellere laadtijden wat uiteindelijk goed is voor gebruikers op alle devices.
+Mobile first is een goed voorbeeld van PE, ik heb de website eerst ontworpen en gemaakt voor mobiel en daarna de rest van devices waaronder tablet en desktop. Tijdens het schrijven van de HTML en CSS heb ik ook de @supports rule en fallback styles toegepast. Hiermee laat ik zien dat ik rekening houd met alle gebruikers die verschillende devices en browsers gebruiken. Daarnaast resulteert het werken van mobile first ook in efficientere code en snellere laadtijden wat uiteindelijk goed is voor gebruikers op alle devices.
 
 Ook heb ik PE toegepast voor het maken van de Link kopieer knop, eerst heb ik de core HTML en javascript geschreven daarna pas enhancements met CSS toegevoegd. 
 
