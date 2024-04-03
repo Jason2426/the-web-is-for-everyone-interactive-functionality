@@ -17,7 +17,7 @@ Voorpagina en detailpagina
 
 De website is gemaakt aan de hand van de bestaande huisstijl van Redpers met zelf toegevoegde twists en tweaks. Op de pagina voorpagina kun je de laatst gepubliceerde artikelen zien en als je er op klikt lezen op mobiel, tablet of laptop.
 
-### [Live Link 🔗](https://embarrassed-lime-coral.cyclic.app/)
+### [Live Link 🔗]([https://embarrassed-lime-coral.cyclic.app/](https://easy-ruby-chiton-cap.cyclic.app/))
 
 > Preview detailpagina
 <img width="1512" alt="Screenshot 2024-03-13 at 17 37 56" src="https://github.com/Jason2426/server-side-rendering-server-side-website/assets/143999883/35579a58-969d-4562-8fd4-cc655adec37d">
