@@ -12,11 +12,27 @@ article {
 
 /* First article styling */
 
+/* Fallback style */
+.article-img {
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    overflow: hidden;
+}
+
+@supports (object-fit: cover) {
+
 .article-img {
     width: 100%;
     object-fit: cover;
     /* Maintain aspect ratio and crop if necessary */
 }
+
+}
+
+@supports (display: -webkit-box) and (-webkit-box-orient: vertical)
+ and (-webkit-line-clamp: 1) {
 
 .article-title {
     margin: 4%;
@@ -27,23 +43,30 @@ article {
     overflow: hidden;
 }
 
-.article-info {
-    margin: 5% 4% 5% 4%;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 5%;
-    border-top: 1px solid rgb(156, 156, 156);
-
-    .author {
-        font-weight: 800;
-    }
-
-    .day_data {
-        color: rgb(151, 151, 151);
-    }
 }
 
-/* Responsiveness styling */
+@supports (display: flex) and (justify-content: space-between) and (padding-top: calc(1%)){
+
+    .article-info {
+        margin: 5% 4% 5% 4%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: calc(5%);
+        border-top: 1px solid rgb(156, 156, 156);
+    
+        .author {
+            font-weight: 800;
+        }
+    
+        .day_data {
+            color: rgb(151, 151, 151);
+        }
+    }
+
+}
+
+/* #region Media queries */
+
 @media (min-width: 31.25em) {
 
     main {
