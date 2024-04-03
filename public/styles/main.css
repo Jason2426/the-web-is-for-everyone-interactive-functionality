@@ -181,6 +181,10 @@ li:hover {
             text-transform: uppercase;
             font-weight: 700;
         }
+
+        a:hover {
+            color: var(--accent-color);
+        }
     }
 
     .newsletter_button {
