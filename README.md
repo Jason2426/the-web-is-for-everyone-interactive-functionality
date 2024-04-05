@@ -28,7 +28,7 @@ De website is gemaakt aan de hand van de bestaande huisstijl van Redpers met zel
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
 * 💻 HTML, CSS, Node, Javascript, EJS en Express.
 * Progessive Enhancement, Mobile first en Feature Detection '@Supports rule' met 'fallback styles' voor toegankelijkheid verschillende browsers
-* Toegankelijk voor alle apparaten
+* Toegankelijk voor meerdere apparaten
 * DRY, gebruik van custom properties en URL variables
 
 
