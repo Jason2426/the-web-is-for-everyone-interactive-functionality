@@ -156,7 +156,7 @@ h2 {
         margin-top: calc(5%);
 
         .read-time {
-            font-family: var(--content-text);
+            font-family: 'Inter', sans-serif;
             font-size: 1em;
             color: #AAAAAA;
             border-top: solid 1px #AAAAAA;
@@ -176,7 +176,7 @@ h2 {
         margin-top: calc(5%);
 
         .content-excerpt {
-            font-family: var(--content-text)
+            font-family: 'Inter', sans-serif;
         }
 
         .actual-content {
@@ -317,10 +317,8 @@ h2 {
     .est-read-time {
 
         .read-time {
-            color: var(--tertiary-accent-color);
             border-top: solid 1px #100f0f;
             border-bottom: solid 1px #090909;
-            font-weight: 700;
         }
     }
 
