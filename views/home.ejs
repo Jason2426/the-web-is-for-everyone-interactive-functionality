@@ -14,6 +14,7 @@
                 <% posts.forEach(post=> { %>
                 <article class="">
                     <a href="/post/<%= post.slug %>" aria-label="<%- post.title.rendered %>" tabindex="0">
+
                         <!-- Anchor elements -->
                         <img src="<%= post.jetpack_featured_media_url %>" class="article-img" alt="">
                         <h2 class="article-title" tabindex="-1">

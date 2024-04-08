@@ -6,8 +6,9 @@ import fetchJson from './helpers/fetch-json.js';
 
 // Set the basis endpoint
 const apiUrl = 'https://redpers.nl/wp-json/wp/v2';
-
 const redpers_post_url = 'https://redpers.nl/wp-json/wp/v2/posts'
+const redpers_categories_url = 'https://redpers.nl/wp-json/wp/v2/categories'
+
 const directus_url = 'https://fdnd-agency.directus.app/items/redpers_shares'
 
 
@@ -30,7 +31,8 @@ app.use(express.static('public'));
 const postsUrl = `${apiUrl}/posts?per_page=27`;
 const allpostsUrl = `${apiUrl}/posts?per_page=100`;
 const onePostURL = `${apiUrl}/posts?slug=`;
-const categoriesURL = `${apiUrl}/categories?per_page=50`;
+const categoriesURL = `${apiUrl}/categories?per_page=100`;
+const sharesURL = '${directusURL}'; 
 
 // Homepage route
 app.get('/', function (request, response) {
@@ -98,6 +100,8 @@ app.get('/post/:slug', function (request, response) {
             response.status(500).send('Error fetching data!');
         });
 });
+
+
 
 // POST route for the index page
 app.post('/', function (request, response) {
