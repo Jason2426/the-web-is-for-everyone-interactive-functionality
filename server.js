@@ -11,7 +11,6 @@ const redpers_categories_url = 'https://redpers.nl/wp-json/wp/v2/categories'
 
 const directus_url = 'https://fdnd-agency.directus.app/items/redpers_shares'
 
-
 // Create a new express app
 const app = express();
 
@@ -28,22 +27,62 @@ app.set('views', './views');
 app.use(express.static('public'));
 
 // Fetch posts from the API
-const postsUrl = `${apiUrl}/posts?per_page=27`;
-const allpostsUrl = `${apiUrl}/posts?per_page=100`;
+const postsURL = `${apiUrl}/posts?per_page=27`;
+const allpostsURL = `${apiUrl}/posts?per_page=100`;
 const onePostURL = `${apiUrl}/posts?slug=`;
-const categoriesURL = `${apiUrl}/categories?per_page=100`;
+const categoriesURL = `${apiUrl}/categories?per_page=27`;
 
-const sharesURL = '${directusURL}'; 
+const sharesURL = `${directus_url}`; 
 
 // Homepage route
+// app.get('/', function (request, response) {
+//     // Fetch posts concurrently
+//     Promise.all([fetchJson(postsURL)])
+//         .then(([postsData]) => {
+//             // Render index.ejs and pass the fetched data as 'posts' variables
+//             response.render('home', { posts: postsData });
+//             // To check fetched Data
+//         })
+//         .catch((error) => {
+//             // Handle error if fetching data fails
+//             console.error('Error fetching data:', error);
+//             response.status(500).send('Error fetching data!');
+//         });
+// });
+
+// GET route for the index page
 app.get('/', function (request, response) {
+
+    // Fetch posts, categories, and shares concurrently
+    Promise.all([fetchJson(categoriesURL), fetchJson(postsURL), fetchJson(sharesURL)])
+        .then(([categoriesData, postsData, sharesData]) => {
+            // Map over the postsData array and add shares information to each article
+            postsData.forEach((article) => {
+                const shareInfo = sharesData.data.find((share) => share.slug === article.slug);
+                article.shares = shareInfo ? shareInfo.shares : 0;
+            });
+
+            // Render index.ejs and pass the fetched data as 'posts' and 'categories' variables
+            response.render('home', { categories: categoriesData, posts: postsData });
+            //Check if the sharesData has info
+            console.log(sharesData);
+        })
+        .catch((error) => {
+            // Handle error if fetching data fails
+            console.error('Error fetching data:', error);
+            response.status(500).send('Error fetching data');
+        });
+});
+
+
+
+app.get('/post/:slug', function (request, response) {
     // Fetch posts concurrently
-    Promise.all([fetchJson(postsUrl)])
-        .then(([postsData]) => {
+    const postSlug = request.params.slug;
+    Promise.all([fetchJson(`${onePostURL} + ${postSlug}`)])
+        .then(([onePostData]) => {
             // Render index.ejs and pass the fetched data as 'posts' variables
-            response.render('home', { posts: postsData });
-            // To check fetched Data
-            // console.log(postsData)
+            response.render('post', { post: onePostData });
         })
         .catch((error) => {
             // Handle error if fetching data fails
@@ -55,7 +94,7 @@ app.get('/', function (request, response) {
 // All posts route
 app.get('/allPosts', function (request, response) {
     // Fetch posts concurrently
-    Promise.all([fetchJson(allpostsUrl)])
+    Promise.all([fetchJson(allpostsURL)])
         .then(([postsData]) => {
             // Render index.ejs and pass the fetched data as 'posts' variables
             response.render('allPosts', { posts: postsData });
@@ -86,23 +125,19 @@ app.get('/categories', function (request, response) {
         });
 });
 
+app.get('/testing', function (request, response) {
 
-app.get('/post/:slug', function (request, response) {
-    // Fetch posts concurrently
-    const postSlug = request.params.slug;
-    Promise.all([fetchJson(`${onePostURL} + ${postSlug}`)])
-        .then(([onePostData]) => {
-            // Render index.ejs and pass the fetched data as 'posts' variables
-            response.render('post', { post: onePostData });
-        })
-        .catch((error) => {
-            // Handle error if fetching data fails
-            console.error('Error fetching data:', error);
-            response.status(500).send('Error fetching data!');
-        });
+    Promise.all([fetchJson(directus_url)])
+    .then(([sharesData]) => {
+        // Render index.ejs and pass the fetched data as 'posts' variables
+        response.render('testing', { shares: sharesData });
+    })
+    .catch((error) => {
+        // Handle error if fetching data fails
+        console.error('Error fetching data:', error);
+        response.status(500).send('Error fetching data!');
+    });
 });
-
-
 
 // POST route for the index page
 app.post('/', function (request, response) {
