@@ -32,6 +32,7 @@ const postsUrl = `${apiUrl}/posts?per_page=27`;
 const allpostsUrl = `${apiUrl}/posts?per_page=100`;
 const onePostURL = `${apiUrl}/posts?slug=`;
 const categoriesURL = `${apiUrl}/categories?per_page=100`;
+
 const sharesURL = '${directusURL}'; 
 
 // Homepage route
